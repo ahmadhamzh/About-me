@@ -163,7 +163,3 @@ let fruit
  
  console.log(scoor);
 alert('your score is '+ ' ' + scoor)
-
-
-
-
