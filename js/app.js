@@ -1,69 +1,110 @@
 "use strict"
 
 let Name = prompt('could you tell us your name please')
-alert('Welcom to our site'+' '+Name)
+
+function $welcoming(){
+    
+    alert('Welcom to our site'+' '+Name)
+}
+$welcoming();
+
+
+
+
+
+
+
 
 let scoor = 0
+let  catPerson = prompt  ('do you think i\'m a cat person' , 'Answer with yes or no')
 
+function $ques1(){
 
-let  catPerson = prompt  ('do you think i\'m a cat person')
-
-switch (catPerson.toLowerCase()){
-    case('yes'):
-    case ('y'):
-     alert('yes the are very cute');
-     ++scoor;
-     break;
-     
-     
-     case('no'):
-     case('n'):
-     alert('no!!!! the are the cutest');
-     break ;
-     
-     
-    }
+    switch (catPerson.toLowerCase()){
+        case('yes'):
+        case ('y'):
+         alert('yes they are very cute');
+         ++scoor;
+         break;
+         
+         
+         case('no'):
+         case('n'):
+         alert('no!!!! the are the cutest');
+         break ;
+         
+         
+        }
+}
+    $ques1();
     console.log(catPerson)
     
     
+
+
+
+let $ques2 = function(){
+
     let programing = prompt('do you think i like programing')
-    
     switch (programing.toLowerCase()){
         case('yes'):
         case('y'):
-        alert('yes . i doo');
         ++scoor;
+        alert('yes . i doo');
         break;
         
         case('no'):
         case('n'):
         alert('too bad i like it alot');
         break;
-        
-        
     }
-    console.log(programing)
-    
-    let football = prompt('do you think i like to watch football')
-    
-    switch (football.toLowerCase()){
-        case('yes'):
-        case('y'):
-        alert('true . football is the best sport ever');
-        ++scoor;
-        break;
-        
-        
-        case('no'):
-        case('n'):
-        alert('wrong . it\'s the best sport ever');
-        break;
 
+} 
+$ques2();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+let $ques3 = function(){
+    let football = prompt('do you think i like to watch football')
         
-    }
+        switch (football.toLowerCase()){
+            case('yes'):
+            case('y'):
+            alert('true . football is the best sport ever');
+            ++scoor;
+            break;
+            
+            
+            case('no'):
+            case('n'):
+            alert('wrong . it\'s the best sport ever');
+            break;
+    
+            
+        }
     
     console.log(football)
+    }
+    $ques3();
+
+
     
+let $ques4 = function(){
+
     let egame = prompt('do you think i like computer games')
     
     switch (egame.toLowerCase()){
@@ -76,12 +117,16 @@ switch (catPerson.toLowerCase()){
         
         
         case('no'):
-      case('n'):
-      alert('you can\'t be more wrong .i cant live without computer game');
-       break;
-       
+        case('n'):
+        alert('you can\'t be more wrong .i cant live without computer game');
+        break;
+        
     }
     console.log(egame)
+}
+$ques4();
+
+let $ques5 = function(){
 
     let movies = prompt('do you think i like movies')
     
@@ -97,69 +142,79 @@ switch (catPerson.toLowerCase()){
     case('n'):
     alert('i watch some but naaa i dont like them alot , rghit answer');
     ++scoor;
-      break;
-
-      }
-      console.log(movies)
-
-
-let guessNumber = Math.floor(Math.random() *10)
-console.log(guessNumber)
-let number = prompt('guess the secret number , between 0-10')
-
-for (let i = 0; i < 3; i++){
-    
-    
-    
-    if (guessNumber < number){
-        number = prompt('try a lower number' );
-        
-        
-    }
-    else if (guessNumber > number){
-        number = prompt('try a higher number' );
-        
-    } 
-    else if (guessNumber = number){
-        alert('great guess')      
         break;
-    }
-}
-
-if (guessNumber != number){
-    alert('wrong guess the secrete number is' + ' ' + guessNumber);
-};
-
-
-let guessFruit = ['melon','banana','peach','orange','red cherry','apple']
-
-console.log(guessFruit)
-let att = 6
-let fruit 
- fruitQus :while(att){
-
-     fruit = prompt('can you guess one of my favorite fruit')
-     att = att - 1;
     
+        }
+        console.log(movies)
+} 
+$ques5();
 
+
+let $ques6 = function(){
+
+    let guessNumber = Math.floor(Math.random() *10)
+    console.log(guessNumber)
+    let number = prompt('guess the secret number , between 0-10')
     
-    for (let i = 0; i < guessFruit.length; i++){
+    for (let i = 0; i < 3; i++){
         
         
-        if (fruit == guessFruit[i]){
-
-            alert('great guess'); 
+        
+        if (guessNumber < number){
+            number = prompt('try a lower number' );
             
-            break fruitQus;
+            
+        }
+        else if (guessNumber > number){
+            number = prompt('try a higher number' );
             
         } 
-            
-     }
-     alert('try another one');
- }
+        else if (guessNumber = number){
+            alert('great guess')      
+            break;
+        }
+    }
     
+    if (guessNumber != number){
+        alert('wrong guess the secrete number is' + ' ' + guessNumber);
+    };
+}
+$ques6();
 
- alert('my favorite fruit is' +' '+ guessFruit)
- 
- console.log(scoor);
-alert('your score is '+ ' ' + scoor)
+
+let $ques7 = function(){
+
+    let guessFruit = ['melon','banana','peach','orange','red cherry','apple']
+    
+    console.log(guessFruit)
+    let att = 6
+    let fruit 
+     fruitQus :while(att){
+    
+         fruit = prompt('can you guess one of my favorite fruit')
+         att = att - 1;
+        
+    
+        
+        for (let i = 0; i < guessFruit.length; i++){
+            
+            
+            if (fruit == guessFruit[i]){
+    
+                alert('great guess'); 
+                
+                break fruitQus;
+                
+            } 
+                
+         }
+         alert('try another one');
+     }
+        
+    
+     alert('my favorite fruit is' +' '+ guessFruit)
+     
+     console.log(scoor);
+    alert('your score is '+ ' ' + scoor)
+}
+$ques7();
