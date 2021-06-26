@@ -120,15 +120,17 @@ for (let i = 0; i < 3; i++){
         number = prompt('try a higher number' );
         
     } 
-    else if (guessNumber = number){
-        alert('great guess')      
+    else if (guessNumber == number){
+        alert('great guess')    
+        ++scoor;  
         break;
     }
 }
 
 if (guessNumber != number){
     alert('wrong guess the secrete number is' + ' ' + guessNumber);
-};
+
+}
 
 
 let guessFruit = ['melon','banana','peach','orange','red cherry','apple']
@@ -146,10 +148,10 @@ let fruit
     for (let i = 0; i < guessFruit.length; i++){
         
         
-        if (fruit == guessFruit[i]){
+        if (fruit.toLowerCase() == guessFruit[i]){
 
             alert('great guess'); 
-            
+            ++scoor;               
             break fruitQus;
             
         } 
@@ -162,4 +164,4 @@ let fruit
  alert('my favorite fruit is' +' '+ guessFruit)
  
  console.log(scoor);
-alert('your score is '+ ' ' + scoor)
+alert(Name+ ' your score is ' +scoor)
